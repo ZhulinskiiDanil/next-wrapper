@@ -2,7 +2,6 @@
 import styles from './styles/page.module.scss'
 import { PageLayout } from '@/common/layout';
 import { Header, Footer, Content } from '@layout/components'
-import { ContentFirst, ContentLast } from "@layout/settings"
 
 export default PageLayout(
   function Component(props: any) {
@@ -21,7 +20,7 @@ export default PageLayout(
       Footer,
     ],
     settings: [
-      ContentFirst
+      
     ]
   }
 )
