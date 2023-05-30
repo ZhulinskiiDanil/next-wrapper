@@ -1,9 +1,9 @@
 'use client';
 import styles from './main.module.scss'
-import { Layout } from '@/common/layout';
+import { PageLayout } from '@/common/layout';
 import { Header, Footer, Content } from '@layout/components'
 
-export default Layout(
+export default PageLayout(
   function Component(props: any) {
     return <div {...props} className={styles.container}>
       <div className={styles.title}>
