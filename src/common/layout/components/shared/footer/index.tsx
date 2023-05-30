@@ -6,10 +6,3 @@ export const Footer = createComponent({
     return <FooterComponent {...props} />
   }
 })
-
-// export const Footer = (props?: any) => ({
-//   props,
-//   Component(props?: any) {
-//     return <FooterComponent {...props} />
-//   }
-// })
