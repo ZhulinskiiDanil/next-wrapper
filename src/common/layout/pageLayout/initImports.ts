@@ -1,12 +1,15 @@
 import { ILayoutImport } from "@/ts/interfaces/layout"
 
-export function initImports<T>(imports: ILayoutImport[]): T[] {
+export function initImports<T>(imports: ILayoutImport[] | (() => ILayoutImport[])): T[] {
   if (imports) {
-    return imports.map((importedComponent: any) => {
-      return typeof importedComponent == "function" ?
+    const parsedimports = typeof imports == "function" ?
+      imports() : imports
+    
+    return parsedimports.map((importedComponent: any) => (
+      typeof importedComponent == "function" ?
         importedComponent() : importedComponent
-    })
-  } else {
-    return []
+    ))
   }
+  
+  return []
 }

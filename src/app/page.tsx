@@ -15,14 +15,13 @@ export default PageLayout(
       </div>
     </div>
   }, {
-    imports: [
+    imports: () => [
       Header,
       Content,
       Footer,
     ],
-    settings: () => ([
-      ContentFirst,
-      ContentLast
-    ])
+    settings: [
+      ContentFirst
+    ]
   }
 )

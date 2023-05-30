@@ -1,8 +1,9 @@
 import { IFullComponent } from "./component"
+import { IFullSetting } from "./setting"
 
 export type ILayoutImport = IFullComponent | (() => IFullComponent)
 
 export interface ILayoutProps {
-  imports?: ILayoutImport[]
-  settings?: () => any[]
+  imports?: ILayoutImport[] | (() => ILayoutImport[])
+  settings?: IFullSetting[] | (() => IFullSetting[])
 }
