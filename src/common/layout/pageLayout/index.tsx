@@ -1,18 +1,15 @@
 import styles from './main.module.scss'
 import React from 'react'
 
+// Functions
+import { initSettings } from './initSettings'
+
 // Interfaces
 import { IFullComponent, ILayoutProps } from "@/ts/interfaces/layout"
 
 export function PageLayout(component: Function, props: ILayoutProps) {
-  const imports = (props?.imports || [])
-    .map(importedComponent => {
-      if (typeof importedComponent == "function") {
-        return importedComponent()
-      } else {
-        return importedComponent
-      }
-    })
+  const initProps = initSettings(props)
+  const imports: IFullComponent[] = initProps.imports || []
   const mainComponent = imports.find(elm => elm.isMain)
 
   return function ComponentWrapper(props: any) {

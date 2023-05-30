@@ -1,7 +1,8 @@
 'use client';
-import styles from './main.module.scss'
+import styles from './styles/page.module.scss'
 import { PageLayout } from '@/common/layout';
 import { Header, Footer, Content } from '@layout/components'
+import { ContentFirst, ContentLast } from "@layout/settings"
 
 export default PageLayout(
   function Component(props: any) {
@@ -15,12 +16,13 @@ export default PageLayout(
     </div>
   }, {
     imports: [
-      Header({ onClick: () => console.log("TEST") }),
+      Header,
       Content,
       Footer,
     ],
     settings: () => ([
-      
+      ContentFirst,
+      ContentLast
     ])
   }
 )
