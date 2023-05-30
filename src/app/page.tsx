@@ -1,4 +1,3 @@
-'use client';
 import styles from './styles/page.module.scss'
 import { PageLayout } from '@/common/layout';
 import { Header, Footer, Content } from '@layout/components'
