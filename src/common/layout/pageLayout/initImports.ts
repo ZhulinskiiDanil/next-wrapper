@@ -1,4 +1,4 @@
-import { ILayoutImport } from "@/ts/interfaces/layout"
+import { ILayoutImport } from "@layout"
 
 export function initImports<T>(imports: ILayoutImport[] | (() => ILayoutImport[])): T[] {
   if (imports) {

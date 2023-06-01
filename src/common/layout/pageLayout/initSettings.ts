@@ -1,4 +1,4 @@
-import { IFullComponent, ILayoutProps } from "@/ts/interfaces/layout";
+import { IFullComponent, ILayoutProps } from "@layout"
 import { ISetting } from "@/common/libs/layout/interfaces/setting";
 import { initImports } from "./initImports";
 

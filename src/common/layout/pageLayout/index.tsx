@@ -5,7 +5,7 @@ import React from 'react'
 import { initSettings } from './initSettings'
 
 // Interfaces
-import { IFullComponent, ILayoutProps } from "@/ts/interfaces/layout"
+import { IFullComponent, ILayoutProps } from "@layout"
 
 export function PageLayout(component: Function, props: ILayoutProps) {
   const initProps = initSettings(props)
