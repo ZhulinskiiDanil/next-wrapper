@@ -1,5 +1,5 @@
 import { IFullComponent, ILayoutProps } from "@/ts/interfaces/layout";
-import { ISetting } from "@/ts/interfaces/layout/setting";
+import { ISetting } from "@/common/libs/layout/interfaces/setting";
 import { initImports } from "./initImports";
 
 export function initSettings(props: ILayoutProps): any {
