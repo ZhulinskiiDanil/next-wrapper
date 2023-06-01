@@ -1,4 +1,4 @@
-import { IComponent } from "@/ts/interfaces/layout"
+import { IComponent } from "@layout"
 import { createSetting } from "@layout/createSetting"
 
 export const ContentFirst = createSetting({
