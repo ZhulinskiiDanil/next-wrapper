@@ -24,6 +24,9 @@
     "paths": {
       "@/*": ["./src/*"],
 
+      // Public
+      "@public/*": ["./public/*"],
+
       // Components
       "@components/*": ["./src/components/*"],
       "@svg/*": ["./src/components/svg/*"],
