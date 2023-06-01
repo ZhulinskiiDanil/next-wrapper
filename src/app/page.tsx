@@ -4,8 +4,6 @@ import { PageLayout } from '@/common/layout';
 import { Header, Footer, Content } from '@layout/components'
 import { pages } from '@/common/constants/pages'
 
-pages
-
 export default PageLayout(
   function Component(props: any) {
     return <div {...props} className={styles.container}>

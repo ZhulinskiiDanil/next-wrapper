@@ -35,6 +35,7 @@
       // Common
       "@constants/*": ["./src/common/constants/*"],
       "@funcs/*": ["./src/common/funcs/*"],
+      "@layout/*": ["./src/common/layout/*"],
       "@layout": ["./src/common/libs/layout/index"],
 
       // Pages
