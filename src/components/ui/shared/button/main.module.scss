@@ -1,0 +1,41 @@
+.btn {
+  background: #eee;
+  color: #222;
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+  transition: .2s ease;
+  cursor: pointer;
+
+  &.hidden {
+    display: none;
+  }
+
+  &:hover {
+    background: #ddd;
+  }
+
+  &_default {
+    
+  }
+
+  &_primary {
+    background: #222;
+    color: white;
+
+    &:hover {
+      background: #111;
+    }
+  }
+
+  &_white {
+    background: white;
+    color: #222;
+    box-shadow: 0 0 20px 0;
+
+    &:hover {
+      background: #eee;
+    }
+  }
+}
