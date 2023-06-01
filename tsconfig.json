@@ -39,7 +39,7 @@
       "@layout": ["./src/common/libs/layout/index"],
 
       // Pages
-      "@pages/*": ["./src/common/constants/shared/pages/*"],
+      "@pages": ["./src/common/constants/pages/index"],
 
       // Clases
       "@clases/*": ["./src/common/clases/*"],

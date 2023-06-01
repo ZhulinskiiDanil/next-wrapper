@@ -51,7 +51,7 @@ export class Pages {
 
   public getAll(
     options: { unique?: boolean } = { unique: true }
-  ) {
+  ): IPage[] {
     const returnedPages: { [key: string]: IPage } = {}
 
     return Object.entries(this)
