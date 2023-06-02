@@ -1,5 +1,8 @@
-import { ICountries } from "@/ts/types/shared/countries"
 import { IPage } from "@layout"
+import { ICountries } from "@/ts/types/shared/countries"
+
+// Functions
+import { v4 as uuidv4 } from 'uuid'
 
 export function createPage(
   path: string,
@@ -12,8 +15,9 @@ export function createPage(
   if (typeof pageName == "string") {
     return {
       [pageName]: {
-        path,
-        includes: options?.includes,
+        key: uuidv4(),
+        path: path || "/",
+        includes: options?.includes || {},
         name: options?.name || {}
       }
     }
@@ -21,8 +25,9 @@ export function createPage(
     return Object.fromEntries(
       pageName.map((page: string) => (
         [page, {
-          path,
-          includes: options?.includes,
+          key: uuidv4(),
+          path: path || "/",
+          includes: options?.includes || {},
           name: options?.name || {}
         }]
       ))
