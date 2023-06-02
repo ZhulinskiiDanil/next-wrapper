@@ -3,7 +3,7 @@ import { createPage, Pages } from "@layout"
 export const pages = new Pages({
   ...createPage("/", ["/"], {
     name: {
-      eu: "Home",
+      en: "Home",
       ru: "Главная"
     }
   })

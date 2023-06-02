@@ -1,3 +1,4 @@
+import { ICountries } from "@/ts/types/shared/countries"
 import { IPage } from "@layout"
 
 export function createPage(
@@ -5,10 +6,7 @@ export function createPage(
   pageName: string | string[],
   options?: {
     includes?: { [key: string]: any }
-    name: {
-      eu?: string
-      ru?: string
-    }
+    name: ICountries
   }
 ): { [key: string]: IPage } {
   if (typeof pageName == "string") {
