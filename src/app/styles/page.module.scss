@@ -11,4 +11,35 @@
   .description {
     margin-top: 5%;
   }
+
+  section.counter {
+    margin-top: 5%;
+
+    p.count {
+      font-size: 2em;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .buttons {
+      margin-top: 1em;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+
+      .button {
+        padding: .4em 1em;
+        transition: .15s ease;
+
+        &:hover {
+          scale: .98;
+        }
+
+        &:active {
+          scale: .9;
+          transition: .01s ease;
+        }
+      }
+    }
+  }
 }
