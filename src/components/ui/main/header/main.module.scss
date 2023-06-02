@@ -1,5 +1,14 @@
 .header {
-  padding: 20px;
+  padding: 1em;
   text-align: center;
-  background: #333;
+  background: #eee;
+
+  .nav {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      padding: .4em 1em;
+    }
+  }
 }
