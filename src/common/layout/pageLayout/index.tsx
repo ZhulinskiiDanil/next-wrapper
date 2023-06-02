@@ -2,7 +2,7 @@ import styles from './main.module.scss'
 import React from 'react'
 
 // Functions
-import { initSettings } from './initSettings'
+import { initSettings } from '@layout'
 
 // Interfaces
 import { IFullComponent, ILayoutProps } from "@layout"

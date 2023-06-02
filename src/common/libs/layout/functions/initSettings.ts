@@ -1,6 +1,6 @@
+import { initImports } from "./initImports"
 import { IFullComponent, ILayoutProps } from "@layout"
-import { ISetting } from "@/common/libs/layout/interfaces/setting";
-import { initImports } from "./initImports";
+import { ISetting } from "@layout"
 
 export function initSettings(props: ILayoutProps): any {
   const imports = initImports<IFullComponent>(props.imports || [])

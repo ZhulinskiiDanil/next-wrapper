@@ -2,7 +2,6 @@
 import styles from './styles/page.module.scss'
 import { PageLayout } from '@/common/layout';
 import { Header, Footer, Content } from '@layout/components'
-import { pages } from '@pages'
 
 export default PageLayout(
   function Component(props: any) {

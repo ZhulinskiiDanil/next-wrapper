@@ -1,5 +1,5 @@
 import FooterComponent from "@ui/main/footer"
-import { createComponent } from "@/common/layout/createComponent"
+import { createComponent } from "@layout"
 
 export const Footer = createComponent({
   Component(props?: any) {

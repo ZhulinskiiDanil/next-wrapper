@@ -1,4 +1,4 @@
-import { IPage } from "@/ts/interfaces/pages"
+import { IPage } from "@layout"
 
 export function createPage(
   path: string,

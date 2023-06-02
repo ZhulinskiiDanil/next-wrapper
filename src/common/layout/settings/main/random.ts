@@ -1,5 +1,5 @@
 import { IComponent } from "@layout"
-import { createSetting } from "@layout/createSetting"
+import { createSetting } from "@/common/libs/layout/functions/createSetting"
 
 function shuffle(array: any[]) {
   array.sort(() => Math.random() - 0.5);

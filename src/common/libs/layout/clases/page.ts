@@ -1,5 +1,5 @@
 import { createPage } from "@layout"
-import { IPage } from "@/ts/interfaces/pages/index"
+import { IPage } from "@layout"
 
 export class Pages {
   [key: string]: IPage | any
