@@ -1,0 +1,1 @@
+export type IRequestMethod = "GET" | "POST" | "PATCH" | "DELETE" | "PUT"

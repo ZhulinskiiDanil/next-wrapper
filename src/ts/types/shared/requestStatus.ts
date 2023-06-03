@@ -1,0 +1,1 @@
+export type IStatus = "pending" | "fulfilled" | "rejected"
