@@ -35,11 +35,14 @@
       // Hooks
       "@hooks/*": ["./src/hooks/*"],
 
+      // libs
+      "@layout": ["./src/common/libs/layout/index"],
+      "@pages-router": ["./src/common/libs/pages-router/index"],
+
       // Common
       "@constants/*": ["./src/common/constants/*"],
       "@funcs/*": ["./src/common/funcs/*"],
       "@layout/*": ["./src/common/layout/*"],
-      "@layout": ["./src/common/libs/layout/index"],
 
       // Pages
       "@pages": ["./src/common/constants/pages/index"],

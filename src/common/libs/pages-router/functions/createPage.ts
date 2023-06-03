@@ -1,4 +1,4 @@
-import { IPage } from "@layout"
+import { IPage } from "@pages-router"
 import { ICountries } from "@/ts/types/shared/countries"
 
 // Functions

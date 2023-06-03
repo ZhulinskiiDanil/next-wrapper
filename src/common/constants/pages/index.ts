@@ -1,4 +1,4 @@
-import { createPage, Pages } from "@layout"
+import { createPage, Pages } from "@pages-router"
 
 export const pages = new Pages({
   ...createPage("/", ["main", "home"], {

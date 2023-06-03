@@ -1,5 +1,5 @@
-import { createPage } from "@layout"
-import { IPage } from "@layout"
+import { createPage } from "@pages-router"
+import { IPage } from "@pages-router"
 
 export class Pages {
   [key: string]: IPage | any

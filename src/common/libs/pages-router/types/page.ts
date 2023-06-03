@@ -6,7 +6,3 @@ export interface IPage {
   includes?: { [key: string]: boolean }
   name: ICountries
 }
-
-export interface IPages {
-  findPages: () => { [key: string]: IPage }
-}
