@@ -1,247 +1,189 @@
 export interface ICountries {
+  // Main langs
+  ru?: string
+  ua?: string
   en?: string
+
+  ab?: string
+  aa?: string
   af?: string
-  ax?: string
-  al?: string
-  dz?: string
-  as?: string
-  ad?: string
-  ao?: string
-  ai?: string
-  aq?: string
-  ag?: string
-  ar?: string
+  ak?: string
+  sq?: string
   am?: string
-  aw?: string
-  au?: string
-  at?: string
+  ar?: string
+  an?: string
+  hy?: string
+  as?: string
+  av?: string
+  ae?: string
+  ay?: string
   az?: string
-  bs?: string
-  bh?: string
-  bd?: string
-  bb?: string
-  by?: string
-  be?: string
-  bz?: string
-  bj?: string
   bm?: string
-  bt?: string
-  bo?: string
   ba?: string
-  bw?: string
-  bv?: string
-  br?: string
-  io?: string
+  eu?: string
+  be?: string
   bn?: string
-  bg?: string
-  bf?: string
+  bh?: string
   bi?: string
-  kh?: string
-  cm?: string
+  bs?: string
+  br?: string
+  bg?: string
+  my?: string
   ca?: string
-  cv?: string
-  ky?: string
-  cf?: string
-  td?: string
-  cl?: string
-  cn?: string
-  cx?: string
-  cc?: string
-  co?: string
   km?: string
-  cg?: string
-  cd?: string
-  ck?: string
-  cr?: string
-  ci?: string
-  hr?: string
+  ch?: string
+  ce?: string
+  ny?: string
+  zh?: string
   cu?: string
-  cy?: string
-  cz?: string
-  dk?: string
-  dj?: string
-  dm?: string
-  do?: string
-  ec?: string
-  eg?: string
-  sv?: string
-  gq?: string
-  er?: string
-  ee?: string
+  cv?: string
+  kw?: string
+  co?: string
+  cr?: string
+  hr?: string
+  cs?: string
+  da?: string
+  dv?: string
+  nl?: string
+  dz?: string
+  eo?: string
   et?: string
-  fk?: string
+  ee?: string
   fo?: string
   fj?: string
   fi?: string
   fr?: string
-  gf?: string
-  pf?: string
-  tf?: string
-  ga?: string
-  gm?: string
-  ge?: string
-  de?: string
-  gh?: string
-  gi?: string
-  gr?: string
-  gl?: string
+  ff?: string
   gd?: string
-  gp?: string
-  gu?: string
-  gt?: string
-  gg?: string
+  gl?: string
+  lg?: string
+  ka?: string
+  de?: string
+  ki?: string
+  el?: string
+  kl?: string
   gn?: string
-  gw?: string
-  gy?: string
+  gu?: string
   ht?: string
-  hm?: string
-  va?: string
-  hn?: string
-  hk?: string
+  ha?: string
+  he?: string
+  hz?: string
+  hi?: string
+  ho?: string
   hu?: string
   is?: string
-  in?: string
+  io?: string
+  ig?: string
   id?: string
-  ir?: string
-  iq?: string
+  ia?: string
   ie?: string
-  im?: string
-  il?: string
+  iu?: string
+  ik?: string
+  ga?: string
   it?: string
-  jm?: string
-  jp?: string
-  je?: string
-  jo?: string
-  kz?: string
-  ke?: string
-  ki?: string
-  kp?: string
+  ja?: string
+  jv?: string
+  kn?: string
   kr?: string
-  kw?: string
+  ks?: string
+  kk?: string
+  rw?: string
+  kv?: string
   kg?: string
+  ko?: string
+  kj?: string
+  ku?: string
+  ky?: string
+  lo?: string
   la?: string
   lv?: string
   lb?: string
-  ls?: string
-  lr?: string
-  ly?: string
   li?: string
+  ln?: string
   lt?: string
   lu?: string
-  mo?: string
   mk?: string
   mg?: string
-  mw?: string
-  my?: string
-  mv?: string
+  ms?: string
   ml?: string
   mt?: string
-  mh?: string
-  mq?: string
+  gv?: string
+  mi?: string
   mr?: string
-  mu?: string
-  yt?: string
-  mx?: string
-  fm?: string
-  md?: string
-  mc?: string
+  mh?: string
+  ro?: string
   mn?: string
-  me?: string
-  ms?: string
-  ma?: string
-  mz?: string
-  mm?: string
   na?: string
-  nr?: string
-  np?: string
-  nl?: string
-  an?: string
-  nc?: string
-  nz?: string
-  ni?: string
-  ne?: string
+  nv?: string
+  nd?: string
   ng?: string
-  nu?: string
-  nf?: string
-  mp?: string
+  ne?: string
+  se?: string
   no?: string
+  nb?: string
+  nn?: string
+  ii?: string
+  oc?: string
+  oj?: string
+  or?: string
   om?: string
-  pk?: string
-  pw?: string
-  ps?: string
+  os?: string
+  pi?: string
   pa?: string
-  pg?: string
-  py?: string
-  pe?: string
-  ph?: string
-  pn?: string
+  ps?: string
+  fa?: string
   pl?: string
   pt?: string
-  pr?: string
-  qa?: string
-  re?: string
-  ro?: string
-  ru?: string
-  rw?: string
-  sh?: string
-  kn?: string
-  lc?: string
-  pm?: string
-  vc?: string
-  ws?: string
+  qu?: string
+  rm?: string
+  rn?: string
   sm?: string
-  st?: string
-  sa?: string
-  sn?: string
-  rs?: string
-  sc?: string
-  sl?: string
   sg?: string
-  sk?: string
-  si?: string
-  sb?: string
-  so?: string
-  za?: string
-  gs?: string
-  es?: string
-  lk?: string
-  sd?: string
+  sa?: string
+  sc?: string
   sr?: string
-  sj?: string
-  sz?: string
-  se?: string
-  ch?: string
-  sy?: string
-  tw?: string
-  tj?: string
-  tz?: string
-  th?: string
+  sn?: string
+  sd?: string
+  si?: string
+  sk?: string
+  sl?: string
+  so?: string
+  st?: string
+  nr?: string
+  es?: string
+  su?: string
+  sw?: string
+  ss?: string
+  sv?: string
   tl?: string
+  ty?: string
   tg?: string
-  tk?: string
-  to?: string
+  ta?: string
   tt?: string
+  te?: string
+  th?: string
+  bo?: string
+  ti?: string
+  to?: string
+  ts?: string
   tn?: string
   tr?: string
-  tm?: string
-  tc?: string
-  tv?: string
+  tk?: string
+  tw?: string
   ug?: string
-  ua?: string
-  ae?: string
-  gb?: string
-  us?: string
-  um?: string
-  uy?: string
+  uk?: string
+  ur?: string
   uz?: string
-  vu?: string
   ve?: string
-  vn?: string
-  vg?: string
   vi?: string
-  wf?: string
-  eh?: string
-  ye?: string
-  zm?: string
-  zw?: string
+  vo?: string
+  wa?: string
+  cy?: string
+  fy?: string
+  wo?: string
+  xh?: string
+  yi?: string
+  yo?: string
+  za?: string
+  zu?: string
 }
