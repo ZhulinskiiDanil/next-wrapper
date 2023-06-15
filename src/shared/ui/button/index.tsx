@@ -1,4 +1,5 @@
 import styles from './main.module.scss'
+import clsx from 'clsx'
 
 // Types
 import { ReactNode, createElement } from 'react'
@@ -24,15 +25,18 @@ export function Button({
   children, content, link, type, fill, hidden,
   className, semantic = true, ...props
 }: IButton) {
+  const classNames = clsx({
+    [styles.btn]: true,
+    [String(className)]: true,
+    [styles[`btn_${type}`]]: true,
+
+    // Dynamic class names
+    [styles.fill]: fill,
+    [styles.hidden]: hidden
+  })
+
   const button = createElement(semantic ? "button" : "div", {
-    ...props,
-    className: [
-      styles.btn,
-      String(className),
-      styles[String(`btn_` + type)],
-      fill && styles.fill,
-      hidden && styles.hidden
-    ].join(" ")
+    ...props, className: classNames
   }, children || content)
 
   if (link) {

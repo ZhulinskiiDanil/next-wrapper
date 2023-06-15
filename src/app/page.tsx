@@ -3,34 +3,39 @@ import styles from './styles/page.module.scss'
 import { PageLayout } from '@layout'
 import { Header, Footer, Content } from '@layout/components'
 
+// Types
+import { ITodo } from '@/shared/types'
+
 // Hooks
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 // Components
 import * as UI from '@/shared/ui'
 import { useClientRequest } from '@useClientRequest'
-
-interface ITodo {
-  id: number | string
-  userId: number | string
-  completed: boolean
-  title: string
-}
+import TodosList from '@/entities/todos/list'
 
 function Component() {
-  const [todo, setTodo] = useState<ITodo>()
+  const [todos, setTodos] = useState<ITodo[]>()
   const [request, status] = useClientRequest()
 
-  function addTodo() {
+  const addTodo = useCallback(function addTodo() {
+    if (Array.isArray(todos)) {
+      const lastTodo: ITodo = todos.slice(-1)[0]
 
-  }
+      setTodos([ ...todos, {
+        ...lastTodo,
+        id: todos.length + 1
+      }])
+    }
+  }, [todos])
+  
 
   useEffect(() => {
     (async () => {
-      const response: ITodo = await request("https://jsonplaceholder.typicode.com/todos/2")
+      const response: ITodo[] = await request("https://jsonplaceholder.typicode.com/todos?_limit=10")
 
-      if (response.userId) {
-        setTodo(response)
+      if (response?.length > 0) {
+        setTodos(response)
       }
     })()
   }, [request])
@@ -53,6 +58,9 @@ function Component() {
           content="Add todo"
           type="primary"
         />
+      </div>
+      <div className="list">
+        <TodosList todos={todos} />
       </div>
     </section>
   </div>

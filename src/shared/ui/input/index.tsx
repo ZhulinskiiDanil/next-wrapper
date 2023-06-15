@@ -1,7 +1,8 @@
 import styles from './main.module.scss'
+import clsx from 'clsx'
 
 // Types
-import { ReactNode } from 'react'
+import { ChangeEvent, ReactNode } from 'react'
 
 type InputType = "default" | "primary" | "white"
 
@@ -18,16 +19,22 @@ interface IInput {
 
 export function Input({
   children, type, fill, hidden,
-  className, ...props
+  className, placeholder, ...props
 }: IInput) {
+  const classNames = clsx({
+    [styles.input]: true,
+    [String(className)]: true,
+    
+    // Dynamic class names
+    [styles.fill]: fill,
+    [styles.hidden]: hidden
+  })
+
   return <input
     {...props}
-    className={[
-      styles.btn,
-      String(className),
-      styles[String(`btn_` + type)],
-      fill && styles.fill,
-      hidden && styles.hidden
-    ].join(" ")}
+    type={type || "text"}
+    className={classNames}
+    placeholder={placeholder || ""}
+    {...props}
   />
 }
