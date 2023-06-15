@@ -12,10 +12,10 @@
     margin-top: 1vh;
   }
 
-  section.counter {
+  .todos {
     margin-top: 3vh;
 
-    p.count {
+    &__title {
       font-size: 2em;
       font-weight: 600;
       color: #555;

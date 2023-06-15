@@ -1,13 +1,13 @@
 'use client'
 import styles from './styles/page.module.scss'
-import { PageLayout } from '@/common/layout'
+import { PageLayout } from '@layout'
 import { Header, Footer, Content } from '@layout/components'
 
 // Hooks
 import { useEffect, useState } from 'react'
 
 // Components
-import Button from '@ui/shared/button'
+import * as UI from '@/shared/ui'
 import { useClientRequest } from '@useClientRequest'
 
 interface ITodo {
@@ -18,20 +18,11 @@ interface ITodo {
 }
 
 function Component() {
-  const [count, setCount] = useState(0)
   const [todo, setTodo] = useState<ITodo>()
   const [request, status] = useClientRequest()
 
-  function increment() {
-    setCount(pre => pre + 1)
-  }
+  function addTodo() {
 
-  function decrement() {
-    setCount(pre => pre > 0 ? pre - 1 : 0)
-  }
-
-  function clearCounter() {
-    setCount(0)
   }
 
   useEffect(() => {
@@ -51,24 +42,16 @@ function Component() {
     <div className={styles.description}>
       Wrapper for next.js 13 version with custom layout and app directory
     </div>
-    <section className={styles.counter}>
-      <p className={styles.count}>{ count }</p>
+    <section className={styles.todos}>
+      <p className={styles.todos__title}>
+        Todos
+      </p>
       <div className={styles.buttons}>
-        <Button
-          onClick={increment}
+        <UI.Button
+          onClick={addTodo}
           className={styles.button}
-          content="Increment"
+          content="Add todo"
           type="primary"
-        />
-        <Button
-          onClick={decrement}
-          className={styles.button}
-          content="Decrement"
-        />
-        <Button
-          onClick={clearCounter}
-          className={styles.button}
-          content="Clear"
         />
       </div>
     </section>

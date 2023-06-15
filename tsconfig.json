@@ -27,23 +27,29 @@
       // Public
       "@public/*": ["./public/*"],
 
+      // FSD
+      "@entities/*": ["./src/entities/*"],
+      "@features/*": ["./src/features/*"],
+      "@widgets/*": ["./src/widgets/*"],
+      "@shared/*": ["./src/shared/*"],
+
       // Components
       "@components/*": ["./src/components/*"],
-      "@svg/*": ["./src/components/svg/*"],
-      "@ui/*": ["./src/components/ui/*"],
+      "@svg/*": ["./src/shared/svg/*"],
+      "@ui/*": ["./src/shared/ui/*"],
 
       // Hooks
-      "@useClientRequest":  ["./src/hooks/shared/useClientRequest"],
-      "@hooks/*": ["./src/hooks/*"],
+      "@useClientRequest":  ["./src/shared/hooks/useClientRequest"],
+      "@hooks/*": ["./src/shared/hooks/*"],
 
       // libs
-      "@layout": ["./src/common/libs/layout/index"],
-      "@pages-router": ["./src/common/libs/pages-router/index"],
+      "@layout": ["./src/shared/libs/layout/index"],
+      "@pages-router": ["./src/shared/libs/pages-router/index"],
 
       // Common
       "@constants/*": ["./src/common/constants/*"],
       "@funcs/*": ["./src/common/funcs/*"],
-      "@layout/*": ["./src/common/layout/*"],
+      "@layout/*": ["./src/shared/layout/*"],
 
       // Pages
       "@pages": ["./src/common/constants/pages/index"],
