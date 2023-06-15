@@ -9,10 +9,12 @@ jobs:
         node-version: [20.x]
     steps:
       - uses: actions/checkout@v3
-      - name: Linting
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Install Modules
       - run: npm i
+      - name: Linting
       - run: npm run lint
+      - name: Build
       - run: npm run build

@@ -1,6 +1,6 @@
 'use client'
 import styles from './styles/page.module.scss'
-import { PageLayout } from '@/common/layout';
+import { PageLayout } from '@layout'
 import { Header, Footer, Content } from '@layout/components'
 import { pages } from '@pages'
 

@@ -52,7 +52,7 @@
       "@layout/*": ["./src/shared/layout/*"],
 
       // Pages
-      "@pages": ["./src/common/constants/pages/index"],
+      "@pages": ["./src/common/constants/pages"],
 
       // Clases
       "@clases/*": ["./src/common/clases/*"],
