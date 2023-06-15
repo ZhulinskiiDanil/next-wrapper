@@ -2,20 +2,21 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
-  install-packages:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [20.x]
     steps:
-      - uses: actions/checkout@v3
+      - name: Clone repository
+        uses: actions/checkout@v3
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-        
-      - name: Install Modules
-        run: npm i
+      - name: Install dependencies
+        run: npm install
       - name: Linting
         run: npm run lint
-      - name: Build
+      - name: Generate build
         run: npm run build
