@@ -10,7 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         uses: actions/setup-node@v3
-        with: node-version: ${{ matrix.node-version }}
+        with:
+          node-version: ${{ matrix.node-version }}
         
       - name: Install Modules
         run: npm i
