@@ -28,8 +28,7 @@ export class Pages {
           returnedPages[page.path] = page
           return cb(page)
         }
-      })
-      .map(([_, page]) => page)
+      }).map(([_, page]) => page)
   }
 
   public includes({ name, unique = true }: {

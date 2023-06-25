@@ -13,9 +13,9 @@ export const pages = new Pages({
   }),
   ...createPage("/catalog", ["catalog", "каталог"], {
     name: {
-      en: "Home",
-      ru: "Главная",
-      ua: "Головна"
+      en: "Catalog",
+      ru: "Каталог",
+      ua: "Каталог"
     },
     includes: {
       "header": true
@@ -23,10 +23,17 @@ export const pages = new Pages({
   }),
   ...createPage("/add-post", ["add-post", "ADD_POST"], {
     name: {
-      en: "Home",
-      ru: "Главная",
-      ua: "Головна"
+      en: "Add post",
+      ru: "Добавить пост",
+      ua: "Додати пост"
+    }
+  }),
+  ...createPage("/users/[id]", ["user", "userById"], {
+    name: {
+      en: "User by id",
+      ru: "Пользователь по id",
+      ua: "Користувач по id"
     },
-    includes: {}
+    includes: { header: true }
   })
 })

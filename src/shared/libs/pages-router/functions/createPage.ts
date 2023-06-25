@@ -12,24 +12,32 @@ export function createPage(
     name: ICountries
   }
 ): { [key: string]: IPage } {
+  const pageValue = {
+    key: uuidv4(),
+    path: path || "/",
+    includes: options?.includes || {},
+    name: options?.name || {},
+    parsePath(props: { [key: string]: any }): string {
+      let parsedPath = this.path
+      
+      for (const key in props) {
+        if (path.includes(`[${key}]`)) {
+          parsedPath = parsedPath.replace(`[${key}]`, props[key])
+        }
+      }
+
+      return parsedPath
+    }
+  }
+
   if (typeof pageName == "string") {
     return {
-      [pageName]: {
-        key: uuidv4(),
-        path: path || "/",
-        includes: options?.includes || {},
-        name: options?.name || {}
-      }
+      [pageName]: pageValue
     }
   } else {
     return Object.fromEntries(
       pageName.map((page: string) => (
-        [page, {
-          key: uuidv4(),
-          path: path || "/",
-          includes: options?.includes || {},
-          name: options?.name || {}
-        }]
+        [page, pageValue]
       ))
     )
   }
