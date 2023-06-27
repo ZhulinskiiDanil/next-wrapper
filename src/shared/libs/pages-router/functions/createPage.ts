@@ -10,6 +10,7 @@ export function createPage(
   options?: {
     includes?: { [key: string]: any }
     name: ICountries
+    initialValues?: { [key: string]: string } | null
   }
 ): { [key: string]: IPage } {
   const pageValue = {
@@ -17,6 +18,7 @@ export function createPage(
     path: path || "/",
     includes: options?.includes || {},
     name: options?.name || {},
+    initialValues: options?.initialValues || null,
     parsePath(props: { [key: string]: any }): string {
       let parsedPath = this.path
       
@@ -27,6 +29,9 @@ export function createPage(
       }
 
       return parsedPath
+    },
+    withInitialValues() {
+      return this.parsePath(options?.initialValues || {})
     }
   }
 
