@@ -8,8 +8,8 @@ export function createPage(
   path: string,
   pageName: string | string[],
   options?: {
+    name?: ICountries
     includes?: { [key: string]: any }
-    name: ICountries
     initialValues?: { [key: string]: string } | null
   }
 ): { [key: string]: IPage } {

@@ -28,12 +28,13 @@ export const pages = new Pages({
       ua: "Додати пост"
     }
   }),
-  ...createPage("/users/[id]", ["user", "userById"], {
+  ...createPage("/users/[userId]", ["user", "userById"], {
     name: {
       en: "User by id",
       ru: "Пользователь по id",
       ua: "Користувач по id"
     },
+    initialValues: { userId: "123" },
     includes: { header: true }
   })
 })

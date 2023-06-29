@@ -29,7 +29,6 @@ function Component() {
     }
   }, [todos])
   
-
   useEffect(() => {
     (async () => {
       const response: ITodo[] = await request("https://jsonplaceholder.typicode.com/todos?_limit=10")

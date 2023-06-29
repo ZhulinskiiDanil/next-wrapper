@@ -1,5 +1,5 @@
 import styles from './main.module.scss'
-import { pages } from '@/common/constants/pages'
+import { pages } from '@pages'
 
 export default function Header() {
   const headerLinks = pages.includes({ name: "header" })
