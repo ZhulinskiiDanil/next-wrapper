@@ -1,4 +1,4 @@
-import { ICountries } from "@shared/types"
+import { ICountries } from "./countries"
 
 export interface IPage {
   key: string

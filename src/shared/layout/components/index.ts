@@ -1,2 +1,3 @@
-export * from './shared'
-export * from './main'
+export * from './content'
+export * from './header'
+export * from './footer'

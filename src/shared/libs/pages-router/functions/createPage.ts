@@ -1,5 +1,5 @@
 import { IPage } from "@pages-router"
-import { ICountries } from "@shared/types"
+import { ICountries } from "../types/countries"
 
 // Functions
 import { v4 as uuidv4 } from 'uuid'
@@ -34,7 +34,7 @@ export function createPage(
       return this.parsePath(options?.initialValues || {})
     }
   }
-
+  
   if (typeof pageName == "string") {
     return {
       [pageName]: pageValue
